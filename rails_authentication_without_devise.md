@@ -20,7 +20,7 @@ Contents
 
 Authentication in web development is the process of confirming the identity of a user. This usually involves checking credentials like usernames and passwords.
 
-Think of your web app like a hotel. When a guest arrives, the receptionist checks their ID to authenticate their identity, ensuring they are who they claim to be. Once verified, the guest receives a key (similar to a session token or cookie) which allows them access to their room and to areas like the lobby and pool for the duration of their stay (session).
+Think of your web app like a hotel. When a guest arrives, the receptionist checks their ID to authenticate their identity, ensuring they are who they claim to be. Once verified, the guest receives a key (a session token or a cookie) which allows them access to their room and to areas like the lobby and pool for the duration of their stay (session).
 
 None of this is unique to Ruby on Rails either - the challenges and requirements around authentication are universal, regardless of the framework or technology you choose to build your web app.
 
@@ -36,7 +36,7 @@ Let's figure out the Minimum Viable Product (MVP). An MVP is the most basic vers
 
 The essential features of our DIY auth system are:
 
-- Users should be able to signup to create an account
+- Users should be able to sign up to create an account
 - Users should be able to login and logout
 - Users should be able to reset their password if they forget it
 - Developers should be able to control what different users can access within the application
@@ -355,4 +355,6 @@ module Authentication
     current_user.present?
   end
 end
+:wq
+
 ```
